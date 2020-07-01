@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiches de révision</title>
+    <script src="https://kit.fontawesome.com/c633fbfc2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="clear" class="clear">
+        <i class="fas fa-trash"></i> Supprimer les cartes
+    </button>
+
+    <h1>Fiches de révision
+        <button id="show" class="btn btn-small">
+            <i class="fas fa-plus"></i> Ajouter une nouvelle carte
+        </button>
+    </h1>
+
+    <div id="cards-container" class="cards">
+
+        <div class="card active">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>
+                        Qu'est ce que PHP
+                    </p>
+                </div>
+                <div class="inner-card-back">
+                    <p>Un language de programmation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>
+                        Qu'est ce que PHP
+                    </p>
+                </div>
+                <div class="inner-card-back">
+                    <p>Un language de programmation</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="navigation">
+        <button id="prev" class="nav-button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <p id="current"></p>
+
+        <button id="next" class="nav-button">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <div id="add-container" class="add-container">
+        <h1>Ajouter une nouvelle carte
+            <button id="hide" class="btn btn-small btn-ghost">
+                <i class="fas fa-times"></i>
+            </button>
+        </h1>
+
+        <div class="form-group">
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Entrez une question..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="answer">Réponse</label>
+            <textarea id="answer" placeholder="Entrez la réponse..."></textarea>
+        </div>
+    </div>
+
+    <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i> Ajoutez la carte
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

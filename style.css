@@ -123,7 +123,7 @@ h1 button {
 
 .inner-card-front::after,
 .inner-card-back::after {
-    content: '\f021  Voir la réponse';
+    content: '\f021  Retourner';
     font-family: 'Font Awesome 5 Free', Lato, sans-serif;
     position: absolute;
     top: 10px;

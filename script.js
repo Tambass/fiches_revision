@@ -8,7 +8,9 @@ const questionEl = document.getElementById("question");
 const answerEl = document.getElementById("answer");
 const addCardBtn = document.getElementById("add-card");
 const clearBtn = document.getElementById("clear");
+const clearOne = document.getElementById("clear-one");
 const addContainer = document.getElementById("add-container");
+const activeCard = document.querySelector(".active");
 
 // Kepp track of current card
 let currentActiveCard = 0;
@@ -93,6 +95,7 @@ function setCardsData(cards) {
   localStorage.setItem("cards", JSON.stringify(cards));
   window.location.reload();
 }
+//var delete = localStorage.setItem('cards');
 
 createCards();
 
@@ -161,3 +164,14 @@ clearBtn.addEventListener("click", () => {
   cardsContainer.innerHTML = "";
   window.location.reload();
 });
+
+// Clear active card
+/*
+clearOne.addEventListener("click", (e) => {
+  if (e.target.parentElement.classList.contains("active")) {
+    if (confirm("Voulez-vous vraiment supprimer cette carte ?"))
+      e.target.parentElement.remove();
+  }
+  console.log(e);
+});
+*/

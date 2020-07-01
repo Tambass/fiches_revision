@@ -42,6 +42,11 @@ h1 button {
     padding: 5px 10px;
 }
 
+#clear-one{
+    position: absolute;
+    right: 480px;
+}
+
 .btn-ghost {
     border: 0;
     background-color: transparent;
@@ -69,8 +74,8 @@ h1 button {
     left: 0;
     height: 100%;
     width: 100%;
-    transform: translateX(50%) rotateY(-10deg);
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateX(50%) rotateY(-50deg);
+    transition: transform 0.8s ease, opacity 0.4s ease;
 }
 
 .card.active {
@@ -81,7 +86,7 @@ h1 button {
 }
 
 .card.left {
-    transform: translateX(-50%) rotateY(10deg);
+    transform: translateX(-50%) rotateY(50deg);
 }
 
 .inner-card {

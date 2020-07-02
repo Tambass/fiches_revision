@@ -95,7 +95,16 @@ function setCardsData(cards) {
   localStorage.setItem("cards", JSON.stringify(cards));
   window.location.reload();
 }
-//var delete = localStorage.setItem('cards');
+let carte = JSON.parse(localStorage.getItem('cards'))
+console.log(carte);
+
+
+// Clear active card
+
+clearOne.addEventListener("click", () => {
+  let x = document.querySelector(".active");
+  x.remove();
+});
 
 createCards();
 
@@ -164,14 +173,3 @@ clearBtn.addEventListener("click", () => {
   cardsContainer.innerHTML = "";
   window.location.reload();
 });
-
-// Clear active card
-/*
-clearOne.addEventListener("click", (e) => {
-  if (e.target.parentElement.classList.contains("active")) {
-    if (confirm("Voulez-vous vraiment supprimer cette carte ?"))
-      e.target.parentElement.remove();
-  }
-  console.log(e);
-});
-*/
